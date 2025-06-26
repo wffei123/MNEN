@@ -18,15 +18,9 @@ The algorithm can be used as standalone program as well as integrated in python 
 
 MNEN can be executed as standalone script with the following parameters:
 
-**arguments**
-Name  |  Type | Description | Default 
--------------  | ------------- |------------- | -------------
-allpath | string| It cotains the file path of networks | './datasets/filelist_dataset.txt'
-files|string|The rank list of IDME algorithm on each network| './datasets/+pt+/data/+pt+.txt'
-
-
 #Input
-All network file path names are placed in the './datasets/filelist_dataset.txt' file. E.g:<br>
+path = 'dataset.txt'#dataset为具体数据集名字
+All datasets are as follows:<br>
 Protein<br>
 Email<br>
 Ca-Erdos<br>
@@ -37,11 +31,11 @@ USAir<br>
 Euroroad<br>
 Ca-GrQc<br>
 Powergrid<br>
+
 # Output
-path = 'dataset.txt'#dataset为具体数据集名字
 The rank list of MNEN algorithm on each network, which are written to the '.\outputdata\MNEN_'+path' file.
 
-Instructions for using DCDME code:
+Instructions for using MNEN code:
 
 1.Install networkx  python libraries before running the script.
 
